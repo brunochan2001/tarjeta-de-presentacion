@@ -13,6 +13,7 @@ body {
   background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 ul {
@@ -97,17 +98,17 @@ main {
 .icon:hover {
   transform: scale(1.9);
 }
-@media (min-width: 1024px) {
+@media (min-width: 820px) {
   main {
-    width: 700px;
+    width: 600px;
   }
   /* Imagen */
   .img-style {
-    width: 180px;
+    width: 150px;
   }
   /* ICON */
   .icon-row {
-    width: 500px;
+    width: 400px;
   }
   .icon {
     width: 30px;
@@ -121,15 +122,51 @@ main {
     font-size: 24px;
   }
   .text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
   /* SKILL */
   .skills_list {
-    gap: 2rem;
+    gap: 1.2rem;
   }
   .list {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    width: 600px;
+  }
+  /* Imagen */
+  .img-style {
+    width: 100px;
+  }
+  /* ICON */
+  .icon-row {
+    width: 400px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  /* TEXT */
+  .title {
+    font-size: 24px;
+  }
+  .specialties {
     font-size: 20px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  /* SKILL */
+  .skills_list {
+    gap: 1.2rem;
+  }
+  .list {
+    font-size: 14px;
     padding: 10px;
   }
 }
