@@ -1,0 +1,54 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+/* ICONOS */
+.icon {
+  width: 40px;
+  height: 40px;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+.icon:hover {
+  width: 60px;
+  height: 60px;
+}
+/* FOOTER */
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+/* TEXTO */
+.text-center {
+  text-align: center;
+  color: aliceblue;
+}
+.img-center {
+  text-align: center;
+}
+/* IMAGEN */
+.img-style {
+  border-radius: 50%;
+  width: 200px;
+}
+/* BODY */
+body {
+  background-image: url(https://midu.dev/images/wallpapers/una-taza-de-javascript.png);
+  background-position: center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+main {
+  width: 600px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  background-color: rgba(22, 22, 25, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+}
