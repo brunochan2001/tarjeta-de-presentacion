@@ -1,61 +1,135 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
-/* ICONOS */
-.icon {
-  width: 40px;
-  height: 40px;
-  transition-property: width, height;
-  transition-duration: 1s;
+html {
+  height: 100%;
+  overflow-y: hidden;
 }
-.icon:hover {
-  width: 60px;
-  height: 60px;
-}
-/* FOOTER */
-.icon-row {
+body {
+  background-image: url(https://midu.dev/images/wallpapers/una-taza-de-javascript.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 400px;
+  align-items: center;
+  height: 100%;
+}
+ul {
+  padding-left: 0px;
+}
+main {
+  width: 350px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  background-color: rgba(22, 22, 25, 0.7);
+  padding: 10px;
+  border-radius: 20px;
 }
+/* IMAGEN */
+.img-style {
+  border-radius: 50%;
+  width: 70px;
+}
+.img-style:hover {
+  transform: scale(1.1);
+}
+.img-center {
+  text-align: center;
+}
+
 /* TEXTO */
 .text-center {
   text-align: center;
   color: aliceblue;
 }
-.img-center {
-  text-align: center;
+.title {
+  font-size: 16px;
 }
-/* IMAGEN */
-.img-style {
-  border-radius: 50%;
-  width: 200px;
+.specialties {
+  font-size: 14px;
 }
+.text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 /* Skill */
+.skills_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .list {
+  display: list-item;
   list-style: none;
+  font-size: 14px;
+  box-shadow: 0 0.25rem 0.5rem 0.125rem #20232a;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: beige;
+  color: #20232a;
 }
-/* BODY */
-ul {
-  padding-left: 0px;
+.list:hover {
+  background-color: rgba(245, 245, 220, 0.5);
+  transform: scale(1.2);
+  color: #fff;
 }
-body {
-  background-image: url(https://midu.dev/images/wallpapers/una-taza-de-javascript.png);
-  background-position: center center;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
+/* ICONOS */
+.icon {
+  width: 20px;
+  height: 20px;
 }
-main {
-  width: 600px;
-  height: auto;
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
-  background-color: rgba(22, 22, 25, 0.7);
-  padding: 40px;
-  border-radius: 20px;
+  margin-top: 30px;
+}
+.icon:hover {
+  transform: scale(1.9);
+}
+@media (min-width: 1024px) {
+  main {
+    width: 700px;
+  }
+  /* Imagen */
+  .img-style {
+    width: 180px;
+  }
+  /* ICON */
+  .icon-row {
+    width: 500px;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  /* TEXT */
+  .title {
+    font-size: 32px;
+  }
+  .specialties {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* SKILL */
+  .skills_list {
+    gap: 2rem;
+  }
+  .list {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
